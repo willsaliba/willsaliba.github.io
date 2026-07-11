@@ -170,15 +170,6 @@ a {
   background: var(--acid);
 }
 
-.hero__portrait::after {
-  position: absolute;
-  inset: 0.7rem;
-  border: 1px solid rgba(23, 24, 22, 0.25);
-  border-radius: inherit;
-  content: "";
-  pointer-events: none;
-}
-
 .hero__portrait img {
   display: block;
   width: 100%;
@@ -281,6 +272,8 @@ a {
 
 .section--accent {
   display: block;
+  padding-top: clamp(4.5rem, 8vw, 7.5rem);
+  padding-bottom: clamp(4.5rem, 8vw, 7.5rem);
   background: var(--acid);
 }
 
@@ -486,7 +479,7 @@ a {
   width: fit-content;
   max-width: 100%;
   margin-bottom: auto;
-  font-size: clamp(2.5rem, 8vw, 8.5rem);
+  font-size: clamp(2.35rem, 7.5vw, 8rem);
   font-weight: 500;
   letter-spacing: -0.075em;
   line-height: 1.15;
@@ -678,7 +671,7 @@ a {
   }
 
   .contact__email {
-    font-size: clamp(2rem, 11.5vw, 3.25rem);
+    font-size: clamp(1.9rem, 10.75vw, 3.1rem);
   }
 }
 

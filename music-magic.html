@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Music Magic — an AI-assisted music production plugin by Will Saliba." />
+    <meta name="theme-color" content="#d9f550" />
+    <title>Music Magic Plugin — Will Saliba</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="music-magic-page">
+    <a class="skip-link" href="#project-content">Skip to project</a>
+    <header class="music-magic-header">
+      <nav class="music-magic-nav" aria-label="Project navigation">
+        <a class="wordmark" href="index.html" aria-label="Return to portfolio">WS<span>.</span></a>
+        <a class="project-header__back" href="index.html#projects">← All projects</a>
+      </nav>
+      <!-- <p class="eyebrow">01 / AI + Music Production</p> -->
+      <h1>Music Magic Plugin<span>.</span></h1>
+    </header>
+    <main class="music-magic-content" id="project-content">
+      <section class="music-magic-description" aria-labelledby="project-description-heading">
+        <h2 id="project-description-heading">Project description</h2>
+        <p>
+          Music Magic is an AI-powered VST3 plugin that integrates generative music directly into
+          digital audio workstations such as Ableton Live. 
+          <br><br>
+          The plugin is built with JUCE, an audio application framework written in C++.
+          When the user generates new music, the application executes a python script which
+          generates music using a tailored version of Riffusion, a model optimised for generating a spectrogram
+          which is an image representation of audio.
+          <br><br>
+          This allows producers to generate, replace, extend and in-fill audio using text prompts and mode-specific controls. 
+          The plugin provides an intuitive workflow for previewing, trimming and importing AI-generated audio 
+          without leaving the music production environment.
+        </p>
+      </section>
+      <div class="music-magic-video">
+        <iframe
+          src="https://drive.google.com/file/d/1PxNgs4PDh07BtisRoI0vLrarSndCpPuy/preview"
+          title="Music Magic project video"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </main>
+  </body>
+</html>

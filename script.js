@@ -19,9 +19,3 @@ if ("IntersectionObserver" in window) {
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
 }
-
-// Project placeholders currently point to "#". Keep them from jumping to the
-// top until real project URLs are added.
-document.querySelectorAll('.project-card[href="#"]').forEach((link) => {
-  link.addEventListener("click", (event) => event.preventDefault());
-});

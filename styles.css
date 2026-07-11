@@ -18,6 +18,8 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -340,6 +342,8 @@ a {
 .timeline__item div > p:last-child {
   max-width: 38rem;
   margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
   opacity: 0.68;
 }
 
@@ -530,6 +534,50 @@ a {
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (min-width: 801px) {
+  .hero {
+    height: 100vh;
+    height: 100svh;
+    min-height: 0;
+    padding-top: clamp(0.9rem, 2.5vh, 1.5rem);
+  }
+
+  .hero__content,
+  .hero__details {
+    min-height: 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.5rem, min(11vw, 17svh), 9.5rem);
+  }
+
+  .hero__portrait {
+    width: clamp(11rem, min(25vw, 34svh), 23rem);
+  }
+
+  .role {
+    margin-bottom: clamp(0.75rem, 2.5vh, 1.75rem);
+    font-size: clamp(1.2rem, min(2vw, 4svh), 2rem);
+  }
+
+  .section-nav a {
+    padding-top: clamp(0.7rem, 2vh, 1.2rem);
+    padding-bottom: clamp(0.7rem, 2vh, 1.2rem);
+  }
+
+  .section--light,
+  .section--ink {
+    padding-top: clamp(3.5rem, 6vh, 5.5rem);
+    padding-bottom: clamp(3.5rem, 6vh, 5.5rem);
+  }
+
+  .section--light .timeline__item,
+  .section--ink .timeline__item {
+    padding-top: clamp(1.15rem, 2vh, 1.6rem);
+    padding-bottom: clamp(1.15rem, 2vh, 1.6rem);
+  }
 }
 
 @media (max-width: 800px) {

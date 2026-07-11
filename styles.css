@@ -724,7 +724,9 @@ a {
   }
 
   .contact__email {
-    font-size: clamp(1.9rem, 10.75vw, 3.1rem);
+    font-size: clamp(1.4rem, 7.5vw, 2.2rem);
+    overflow-wrap: normal;
+    white-space: nowrap;
   }
 }
 

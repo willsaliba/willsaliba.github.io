@@ -396,9 +396,22 @@ a {
   transition: transform 500ms cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 
-.project-card:nth-child(2) .project-card__visual {
+.project-card:nth-child(1) .project-card__visual,
+.project-card:nth-child(2) .project-card__visual,
+.project-card:nth-child(3) .project-card__visual {
   min-height: 0;
+}
+
+.project-card:nth-child(1) .project-card__visual {
+  aspect-ratio: 1000 / 581;
+}
+
+.project-card:nth-child(2) .project-card__visual {
   aspect-ratio: 511 / 290;
+}
+
+.project-card:nth-child(3) .project-card__visual {
+  aspect-ratio: 1099 / 776;
 }
 
 .project-card__visual > span {

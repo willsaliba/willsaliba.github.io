@@ -15,26 +15,37 @@
         <a class="wordmark" href="index.html" aria-label="Return to portfolio">WS<span>.</span></a>
         <a class="project-header__back" href="index.html#projects">← All projects</a>
       </nav>
-      <p class="eyebrow">02 / Thesis Research</p>
+      <!-- <p class="eyebrow">02 / Thesis Research</p> -->
       <h1 class="project-title--long">Tokenizing 3D Objects<span>.</span></h1>
     </header>
-    <main class="music-magic-content" id="project-content">
-      <section class="music-magic-description" aria-labelledby="project-description-heading">
-        <h2 id="project-description-heading">Project description</h2>
-        <p>
-          Replace this text with a description of the Tokenizing 3D Objects
-          project. You can explain the research question, your approach, the
-          technologies used, and the outcome.
-        </p>
-      </section>
-      <div class="music-magic-video">
-        <iframe
-          src="https://drive.google.com/file/d/GOOGLE_DRIVE_FILE_ID/preview"
-          title="Tokenizing 3D Objects project video"
-          allow="autoplay; fullscreen"
-          allowfullscreen
-        ></iframe>
+    <main class="music-magic-content tokenizing-content" id="project-content">
+      <div class="tokenizing-content__left">
+        <section class="music-magic-description" aria-labelledby="project-description-heading">
+          <h2 id="project-description-heading">Project description</h2>
+          <p>
+            LDraw Tokenization for 3D LEGO Generation my honours year machine learning research project exploring how autoregressive
+            transformers can interpret and generate virtual LEGO structures.
+            <br><br>
+            Using Python, Hugging Face and a GPT-2-based architecture, the project involved curating over 13,000 LDraw models and developing
+            custom tokenizers representing each brick’s colour, position, orientation and shape.
+            <br><br>
+            Experiments demonstrated that LDraw-specific tokenization outperformed general-purpose methods, establishing a scalable foundation
+            for AI-assisted 3D CAD generation.
+          </p>
+        </section>
+        <figure class="tokenizing-content__generations">
+          <img
+            src="assets/legoGens.png"
+            alt="Examples of generated LEGO assemblies"
+          />
+        </figure>
       </div>
+      <figure class="tokenizing-content__poster">
+        <img
+          src="assets/POSTER.png"
+          alt="Research poster for the Tokenizing 3D Objects project"
+        />
+      </figure>
     </main>
   </body>
 </html>

@@ -794,6 +794,51 @@ a {
   border: 0;
 }
 
+.music-magic-content.tokenizing-content {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(0.75rem, 1.5vw, 1.5rem);
+}
+
+.tokenizing-content .music-magic-description p {
+  max-width: none;
+}
+
+.tokenizing-content__left {
+  display: grid;
+  min-width: 0;
+  min-height: 0;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: clamp(1rem, 2.5vh, 2rem);
+}
+
+.tokenizing-content__generations,
+.tokenizing-content__poster {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 0;
+  background: transparent;
+}
+
+.tokenizing-content__generations img,
+.tokenizing-content__poster img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  border: 1px solid #000;
+  object-fit: contain;
+}
+
+.tokenizing-content__poster {
+  height: 100%;
+}
+
 @media (min-width: 801px) {
   .hero {
     height: 100vh;

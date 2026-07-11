@@ -578,6 +578,11 @@ a {
     padding-top: clamp(1.15rem, 2vh, 1.6rem);
     padding-bottom: clamp(1.15rem, 2vh, 1.6rem);
   }
+
+  .section--light .timeline__item div > p:last-child {
+    font-size: 0.8rem;
+    line-height: 1.45;
+  }
 }
 
 @media (max-width: 800px) {

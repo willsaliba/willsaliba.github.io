@@ -1037,6 +1037,43 @@ a {
     width: 100%;
     aspect-ratio: 16 / 9;
   }
+
+  .tokenizing-project-page {
+    height: auto;
+    min-height: 100vh;
+    min-height: 100svh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    grid-template-rows: auto auto;
+  }
+
+  .tokenizing-project-page .tokenizing-content {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto;
+    gap: 2rem;
+  }
+
+  .tokenizing-project-page .tokenizing-content__left {
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+  }
+
+  .tokenizing-project-page .music-magic-description p {
+    font-size: clamp(0.9rem, 2.2vw, 1rem);
+  }
+
+  .tokenizing-project-page .tokenizing-content__generations,
+  .tokenizing-project-page .tokenizing-content__poster {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+
+  .tokenizing-project-page .tokenizing-content__generations img,
+  .tokenizing-project-page .tokenizing-content__poster img {
+    width: 100%;
+    max-height: none;
+  }
 }
 
 @media (max-width: 430px) {

@@ -849,6 +849,10 @@ a {
   height: 100%;
 }
 
+.tokenizing-content__award {
+  display: none;
+}
+
 .music-magic-content.surveillance-content {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-template-rows: repeat(2, minmax(0, 1fr));
@@ -1109,7 +1113,7 @@ a {
 
   .tokenizing-project-page .tokenizing-content {
     grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: auto auto;
+    grid-template-rows: repeat(4, auto);
     gap: 2rem;
   }
 
@@ -1133,6 +1137,21 @@ a {
   .tokenizing-project-page .tokenizing-content__poster img {
     width: 100%;
     max-height: none;
+  }
+
+  .tokenizing-project-page .tokenizing-content__award {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .tokenizing-project-page .tokenizing-content__award img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--ink);
   }
 
   .surveillance-project-page {

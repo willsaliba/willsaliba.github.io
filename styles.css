@@ -707,7 +707,7 @@ a {
   transform: translate(0.3rem, -0.3rem);
 }
 
-/* Fixed Music Magic project page */
+/* Project pages that fill the viewport when their content fits */
 .music-magic-page {
   display: grid;
   height: 100vh;
@@ -715,6 +715,16 @@ a {
   overflow: hidden;
   grid-template-rows: auto minmax(0, 1fr);
   background: var(--acid);
+}
+
+/* Music Magic can grow beyond the viewport if fonts or browser UI need more room. */
+.music-magic-project-page {
+  height: auto;
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  grid-template-rows: auto minmax(min-content, 1fr);
 }
 
 .music-magic-header {
@@ -1012,6 +1022,21 @@ a {
     grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
     gap: 1rem;
   }
+
+  .music-magic-project-page .music-magic-content {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+  }
+
+  .music-magic-project-page .music-magic-description p {
+    font-size: clamp(0.9rem, 2.2vw, 1rem);
+  }
+
+  .music-magic-project-page .music-magic-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
 }
 
 @media (max-width: 430px) {
@@ -1085,6 +1110,11 @@ a {
   .music-magic-description p {
     font-size: 0.7rem;
     line-height: 1.4;
+  }
+
+  .music-magic-project-page .music-magic-description p {
+    font-size: 0.9rem;
+    line-height: 1.55;
   }
 }
 

@@ -849,7 +849,67 @@ a {
   height: 100%;
 }
 
+.music-magic-content.surveillance-content {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  grid-template-areas:
+    "description raspberry-pis"
+    "video raspberry-pis";
+  gap: clamp(0.75rem, 1.5vw, 1.5rem);
+}
+
+.surveillance-content .music-magic-description {
+  grid-area: description;
+}
+
+.surveillance-content .music-magic-description p {
+  max-width: none;
+}
+
+.surveillance-content__raspberry-pis,
+.surveillance-content__app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.surveillance-content__raspberry-pis {
+  grid-area: raspberry-pis;
+}
+
+.surveillance-content__app {
+  grid-area: app;
+}
+
+.surveillance-content__raspberry-pis img,
+.surveillance-content__app img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  border: 1px solid var(--ink);
+  object-fit: contain;
+}
+
+.surveillance-content__video {
+  grid-area: video;
+}
+
 @media (min-width: 801px) {
+  .surveillance-content__app {
+    display: none;
+  }
+
+  .surveillance-content__video {
+    width: 90%;
+    justify-self: center;
+  }
+
   .hero {
     height: 100vh;
     height: 100svh;
@@ -1073,6 +1133,48 @@ a {
   .tokenizing-project-page .tokenizing-content__poster img {
     width: 100%;
     max-height: none;
+  }
+
+  .surveillance-project-page {
+    height: auto;
+    min-height: 100vh;
+    min-height: 100svh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    grid-template-rows: auto auto;
+  }
+
+  .surveillance-project-page .surveillance-content {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "description"
+      "raspberry-pis"
+      "app"
+      "video";
+    gap: 1.5rem;
+  }
+
+  .surveillance-project-page .music-magic-description p {
+    font-size: clamp(0.9rem, 2.2vw, 1rem);
+  }
+
+  .surveillance-project-page .surveillance-content__raspberry-pis,
+  .surveillance-project-page .surveillance-content__app {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+
+  .surveillance-project-page .surveillance-content__raspberry-pis img,
+  .surveillance-project-page .surveillance-content__app img {
+    width: 100%;
+    max-height: none;
+  }
+
+  .surveillance-project-page .surveillance-content__video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
   }
 }
 

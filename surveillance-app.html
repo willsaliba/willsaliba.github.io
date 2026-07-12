@@ -8,7 +8,7 @@
     <title>Surveillance App — Will Saliba</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="music-magic-page">
+  <body class="music-magic-page surveillance-project-page">
     <a class="skip-link" href="#project-content">Skip to project</a>
     <header class="music-magic-header">
       <nav class="music-magic-nav" aria-label="Project navigation">
@@ -18,16 +18,34 @@
       <!-- <p class="eyebrow">03 / Distributed Systems</p> -->
       <h1>Surveillance App<span>.</span></h1>
     </header>
-    <main class="music-magic-content" id="project-content">
+    <main class="music-magic-content surveillance-content" id="project-content">
       <section class="music-magic-description" aria-labelledby="project-description-heading">
         <h2 id="project-description-heading">Project description</h2>
         <p>
-          This page is under construction...
+          This project involved building a low-cost distributed system for tracking people across multiple Raspberry Pi cameras.
+          <br><br>
+          It combines YOLOv8-nano, DeepSORT and Kalman filtering to perform real-time detection and maintain identities
+           across camera views without transmitting raw video centrally.
+          <br><br>
+          My contribution focused on designing and developing the Flutter mobile application that supports multi-camera RTSP
+          streaming, live statistics via WebSockets, system configuration and a prototype dangerous-person detection feature.
         </p>
       </section>
-      <div class="music-magic-video">
+      <figure class="surveillance-content__raspberry-pis">
+        <img
+          src="assets/raspPis.png"
+          alt="Raspberry Pi camera hardware used by the distributed surveillance system"
+        />
+      </figure>
+      <figure class="surveillance-content__app">
+        <img
+          src="assets/app.png"
+          alt="Screens from the surveillance system's Flutter mobile application"
+        />
+      </figure>
+      <div class="music-magic-video surveillance-content__video">
         <iframe
-          src="https://drive.google.com/file/d/GOOGLE_DRIVE_FILE_ID/preview"
+          src="https://drive.google.com/file/d/1t7JtnfprM4hRzBs05AsJdXjCi9F4P7Ts/preview"
           title="Surveillance App project video"
           allow="autoplay; fullscreen"
           allowfullscreen

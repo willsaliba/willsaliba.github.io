@@ -1149,7 +1149,8 @@ a {
 
   .tokenizing-project-page .tokenizing-content__award img {
     display: block;
-    width: 100%;
+    width: 60%;
+    max-width: 28rem;
     height: auto;
     border: 1px solid var(--ink);
   }
